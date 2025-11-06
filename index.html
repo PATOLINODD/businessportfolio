@@ -88,7 +88,7 @@
                   <div class="main-header__menu-box">
                      <nav class="navbar p-0">
                         <a href="#heroSec">
-                              <div id="logo" style="width:300px; height:150px;" class="navbar-logo"></div>
+                              <div id="logo" style="width:50%; height:150px;" class="navbar-logo"></div>
                               <script>
                                  const animation = lottie.loadAnimation({
                                     container: document.getElementById('logo'), // the HTML element
@@ -277,7 +277,7 @@
             <div class="row">
                <div class="col-12">
                   <div class="hero__intro text-center mb-160 fade-up" data-delay="200">
-                     <span class="tertiary-text text-uppercase sub-title fw-3 neutral-top">Hello World! <img
+                     <span id="presentation" class="tertiary-text text-uppercase sub-title fw-3 neutral-top">Hello World! <img
                            src="assets/images/hand.png" alt="Image"> Patrick Aqui! Mas Pode Me Chamar de Patolino</span>
                      <h1 class="title-xl fw-6 title-animation mt-16">Seu <span
                            class="secondary-text">Programador</span> de aluguel chegou!</h1>
@@ -1480,7 +1480,7 @@
                         </div>
                         <div class="col-12 col-xl-6">
                            <div class="contact__form fade-left">
-                              <form action="#" method="post">
+                              <form method="post" id="form_email">
                                  <div class="input-group">
                                     <div class="input-single">
                                        <input type="text" name="contact-firstname" id="contactFirstName"
@@ -1514,7 +1514,7 @@
                                        required></textarea>
                                  </div>
                                  <div class="mt-40">
-                                    <button type="submit" class="btn--secondary" title="submit message"
+                                    <button id="send_email" class="btn--secondary" title="submit message"
                                        aria-label="submit message">
                                        <span class="btn-animated-text" data-text="ENVIAR MENSAGEM">ENVIAR MENSAGEM</span>
                                     </button>
@@ -1729,6 +1729,10 @@
    <!-- ==== / js dependencies end ==== -->
    <!-- main js -->
    <script src="assets/js/main.js"></script>
+   <script>
+      const form = document.querySelector("#form_email");
+      console.table(form)
+   </script>
 </body>
 
 </html>

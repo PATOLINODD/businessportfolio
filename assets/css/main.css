@@ -2089,8 +2089,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 .header .navbar-logo {
   line-height: 0px;
@@ -6352,6 +6351,9 @@ span {
   .soon .form-group button {
     justify-content: center;
     width: 100%;
+  }
+  #presentation {
+    display: none;
   }
 }
 .rtl .soon {
