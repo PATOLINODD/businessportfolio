@@ -122,7 +122,7 @@ body {
   color: var(--template-color);
   background-color: var(--template-bg);
   overflow-x: clip;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 body::-webkit-scrollbar {
   width: 5px;
@@ -269,6 +269,17 @@ span {
   line-height: 28px;
   font-weight: 300;
   color: var(--template-color);
+}
+
+p,
+th,
+td,
+li,
+select,
+label,
+blockquote,
+span {
+  text-transform: capitalize;
 }
 
 .text-xxl {
