@@ -2084,6 +2084,7 @@ span {
   position: absolute;
   inset-inline: 0px;
   top: 0px;
+  height: 170px;
 }
 .header .navbar {
   display: flex;
@@ -6313,6 +6314,11 @@ span {
   display: none;
 }
 
+#logo {
+  width: 50% !important; 
+  height:150px !important;
+}
+
 @media only screen and (max-width: 991.98px) {
   .soon {
     padding: 100px 0px;
@@ -6325,6 +6331,11 @@ span {
   }
 }
 @media only screen and (max-width: 499.98px) {
+
+  #logo {
+    height: 120px !important;
+  }
+
   .soon .time-countdown {
     flex-direction: column;
     position: relative;
